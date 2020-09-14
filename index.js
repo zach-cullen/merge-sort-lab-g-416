@@ -34,8 +34,10 @@ function mergeSort(array) {
   let firstHalf = array.slice(0, middleIndex)
   let secondHalf = array.slice(middleIndex)
   // if array length is 1 return array else recurse
-  if (firstHalf.length < 2) {
-    return 
+  if (array.length < 2) {
+    return array
+  } else {
+    return merge(mergeSort(firstHalf), mergeSort(secondHalf))
   }
   
   // merge resulting arrays
