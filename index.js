@@ -37,9 +37,7 @@ function mergeSort(array) {
   if (array.length < 2) {
     return array
   } else {
+    // merge recursive splits 
     return merge(mergeSort(firstHalf), mergeSort(secondHalf))
   }
-  
-  // merge resulting arrays
-  
 }
