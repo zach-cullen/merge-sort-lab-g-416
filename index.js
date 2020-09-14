@@ -20,8 +20,10 @@ function merge(array1, array2) {
     // remove lesser from that array
     if (array1[0] < array2[0]) {
       collection.push(array1.shift())
+    } else {
+      collection.push(array2.shift())
     }
   }
-
   // concat arrays to collection once one is empty and return
+  return collection.concat(array1).concat(array2)
 }
