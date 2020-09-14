@@ -27,3 +27,13 @@ function merge(array1, array2) {
   // concat arrays to collection once one is empty and return
   return collection.concat(array1).concat(array2)
 }
+
+function mergeSort(array) {
+  // recursively split array until length is 1
+  let middleIndex = array.length / 2
+  let firstHalf = array.slice(0, middleIndex)
+  let secondHalf = array.slice(middleIndex)
+  
+  // merge resulting arrays
+  
+}
