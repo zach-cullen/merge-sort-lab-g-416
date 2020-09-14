@@ -29,10 +29,14 @@ function merge(array1, array2) {
 }
 
 function mergeSort(array) {
-  // recursively split array until length is 1
+  // split array
   let middleIndex = array.length / 2
   let firstHalf = array.slice(0, middleIndex)
   let secondHalf = array.slice(middleIndex)
+  // if array length is 1 return array else recurse
+  if (firstHalf.length < 2) {
+    return 
+  }
   
   // merge resulting arrays
   
