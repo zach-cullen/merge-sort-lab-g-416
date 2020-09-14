@@ -10,3 +10,18 @@ function findMinAndRemoveSorted(array) {
   array.splice(minIndex, 1)
   return min
 }
+
+function merge(array1, array2) {
+  // empty collection array
+  let collection = []
+  // repeat as long as neither array is empty
+  while(array1.length != 0 && array2.length != 0) {
+    // compare first of each array and push lesser to empty
+    if (array1[0] < array2[0]) {
+      collection.push(array1.shift())
+    }
+    // remove lesser from that array
+  }
+
+  // concat arrays to collection once one is empty and return
+}
