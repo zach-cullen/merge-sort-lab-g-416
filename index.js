@@ -17,10 +17,10 @@ function merge(array1, array2) {
   // repeat as long as neither array is empty
   while(array1.length != 0 && array2.length != 0) {
     // compare first of each array and push lesser to empty
+    // remove lesser from that array
     if (array1[0] < array2[0]) {
       collection.push(array1.shift())
     }
-    // remove lesser from that array
   }
 
   // concat arrays to collection once one is empty and return
